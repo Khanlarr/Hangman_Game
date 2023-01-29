@@ -39,27 +39,27 @@ class HangMan {
       {
         id: 1,
         name: "Leonardo DiCaprio",
-        img: "assets/img/leonardo.jfif",
+        img: "./assets/img/leonardo.jfif",
       },
       {
         id: 2,
         name: "Jordan Belfort",
-        img: "assets/img/jordan.jfif",
+        img: "./assets/img/jordan.jfif",
       },
       {
         id: 3,
         name: "Martin Scorsese",
-        img: "assets/img/martin.jfif",
+        img: "./assets/img/martin.jfif",
       },
       {
         id: 4,
         name: "Margot Robbie",
-        img: "assets/img/margot.jfif",
+        img: "./assets/img/margot.jfif",
       },
       {
         id: 5,
         name: "Matthew McConaughey",
-        img: "assets/img/matthew.jfif",
+        img: "./assets/img/matthew.jfif",
       },
     ];
     let index = Math.floor(Math.random() * actors.length);
@@ -107,7 +107,7 @@ class HangMan {
     }
 
     if (this.gs_count <= 1 && this.t === 0) {
-      this.image_item = "assets/img/person.png";
+      this.image_item = "./assets/img/person.png";
       this.Reset();
     }
     if (!this.rand_name_array.includes("_")) {
